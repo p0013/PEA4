@@ -1,0 +1,59 @@
+#encabexado{
+    display: grid;
+    text-align: center;
+    background:linear-gradient(to right, cadetblue,white, yellow);
+    font-size: 15px;
+    animation: parpadeo 2s infinite;
+    }
+@keyframes parpadeo{
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+    #columnas{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:cadetblue ; 
+    gap: 100px;
+    }
+.columna{
+   border: 3px solid white;
+   background-color: antiquewhite;
+   text-align: center;
+}
+.baner{
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+.imagenes{
+    display:grid;
+    grid-template-columns: repeat(3,100%);
+    width: 100%;
+    height: 300px;
+    animation: movimiento 8s infinite ease-in-out;
+}
+.imagenes img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+@keyframes movimiento{
+  0% { transform: translateX(0); }
+  33% { transform: translateX(0); }
+
+  36% { transform: translateX(-100%); }
+  66% { transform: translateX(-100%); }
+
+  69% { transform: translateX(-200%); }
+  100% { transform: translateX(-200%); }
+}
+#partebajo{
+    display: grid;
+    text-align: center;
+    background-color: darkslategrey;
+    justify-content: center;
+}
+.icono{
+    display: grid;
+    font-size: 19px;
+}
